@@ -4,7 +4,7 @@
 **Chipathon 2026 – Track B**  
 *Open-source mixed-signal ASIC for smart agriculture*
 
-![Chipathon 2026](https://img.shields.io/badge/Chipathon-2026-blue) ![GF180](https://img.shields.io/badge/Process-GF180MCU-green) ![License](https://img.shields.io/badge/License-Apache--2.0-yellow)
+![Chipathon 2026](https://img.shields.io/badge/Chipathon-2026-blue) ![GF180](https://img.shields.io/badge/Process-GF180MCU-green) 
 
 ## Overview
 

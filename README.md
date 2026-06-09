@@ -28,8 +28,9 @@ The chip communicates with the drone’s main flight controller over **SPI**. Th
 
 <img width="860" height="300" alt="image" src="https://github.com/user-attachments/assets/63375c43-2d8b-4418-ab90-a73171c635a5" />
 
+*Figure 1. Drone architecture diagram*
 
-*No radio or gyroscope is included on‑chip — the chip is purely the sensor‑AI edge node.*
+*(No radio or gyroscope is included on‑chip — the chip is purely the sensor‑AI edge node.)*
 
 ## Key Objectives
 

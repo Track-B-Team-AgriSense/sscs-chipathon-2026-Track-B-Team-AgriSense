@@ -70,10 +70,15 @@ The chip acts as an intelligent filter, ensuring that every transmitted byte has
 <details>
 <summary>➡️How does the event‑driven flow use fusion?</summary>
 The sequence is:
-1. Deep sleep – Only a single‑channel wake‑up comparator monitors one sensor (e.g., humidity, or a broadband gas signal) with a programmable threshold. This is NOT fusion — it’s a cheap, always‑on trigger.
+
+  1. Deep sleep – Only a single‑channel wake‑up comparator monitors one sensor (e.g., humidity, or a broadband gas signal) with a programmable threshold. This is NOT fusion — it’s a cheap, always‑on trigger.
+
 2. Wake event – If the threshold is crossed, the digital core powers up.
+
 3. Sensor burst – The AFE sequentially reads all four sensors (temp, humidity, gas, optical) into the 2 KB SRAM buffer.
+
 4. Inference – The TinyML accelerator runs the 1D‑CNN on the 4‑channel input vector and classifies the crop stress type/severity.
+
 5. Alert (if needed) – The classification result is sent via SPI to the drone controller, which can then decide to send a radio packet, change flight path, or trigger a photo/video capture.
 
 So fusion happens in step 4 — the model sees the full multi‑modal picture before making a decision. The wake‑up trigger is just a gatekeeper to avoid running the digital core continuously.

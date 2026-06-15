@@ -4,10 +4,10 @@
 
 | Role | Name | Responsibilities |
 |------|------|------------------|
-| Analog Front-End (AFE) | [Name] | 4-ch MUX, PGA, AAF, 12‑bit SAR ADC, Bandgap/PTAT |
-| Power Management | [Name] | LDOs, wake‑up comparator, power‑gate, reset |
-| TinyML Accelerator | [Name] | 8‑MAC systolic array, weight streaming, integration with SERV |
-| Digital Core & Integration Lead | [Name] | SERV RISC‑V, SPI, Wishbone bus, top‑level integration, padframe, final DRC/LVS |
+| Analog Front-End (AFE) | Tanmay | 4-ch MUX, PGA, AAF, 12‑bit SAR ADC, Bandgap/PTAT |
+| Power Management | Prathmesh | LDOs, wake‑up comparator, power‑gate, reset |
+| TinyML Accelerator | Parth | 8‑MAC systolic array, weight streaming, integration with SERV |
+| Digital Core & Integration Lead | Neeraj | SERV RISC‑V, SPI, Wishbone bus, top‑level integration, padframe, final DRC/LVS |
 
 ## 📝 Weekly Progress Log
 
